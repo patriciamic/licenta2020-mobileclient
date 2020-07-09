@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_conversation"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:title="@string/conversation" />
+        <item
+            android:id="@+id/nav_medications"
+            android:icon="@drawable/ic_pie_chart_black_24dp"
+            android:title="@string/medications" />
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/ic_insert_chart_black_24dp"
+            android:title="@string/statistics" />
+    </group>
+</menu>

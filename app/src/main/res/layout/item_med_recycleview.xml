@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:minWidth="80dp"
+    android:background="@color/colorWhite"
+    android:layout_marginTop="8dp"
+    android:id="@+id/rl_message">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_pill"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/iv_icon"
+        android:paddingStart="30dp"
+        android:paddingEnd="16dp"
+        >
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:text="Medicament 1"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextDark"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            >
+
+            <TextView
+                android:id="@+id/tv_times_a_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Once a day"
+                android:textSize="18sp"
+                android:maxWidth="140dp"
+                android:layout_gravity="center"/>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="25dp"
+                android:background="@color/colorLightGrey3"
+                android:layout_marginStart="8dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_days_interval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Everyday"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:textSize="18sp"
+                android:maxWidth="140dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_treatment_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continuous treatment"
+            android:layout_below="@id/ll_content"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorLightGrey2"
+        android:layout_below="@+id/rl_content"
+        android:layout_marginTop="8dp"
+        />
+</RelativeLayout>

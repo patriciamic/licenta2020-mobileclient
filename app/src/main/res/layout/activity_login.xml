@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    >
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/pill_color"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="type your code here"
+        android:inputType="number"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_light_style"
+        android:padding="16dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Sign in"
+        android:textSize="21sp"
+        android:layout_below="@+id/et_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_primary_style"
+        android:textColor="@color/colorLight"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_waves"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/waves"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

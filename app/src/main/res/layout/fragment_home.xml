@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:padding="21dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RELAX"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_title"
+        android:textColor="@color/colorTextDark"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="No medications to take"
+        android:gravity="center"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_typing"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/circle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/cw_summary"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:layout_below="@+id/animation_typing"
+    android:layout_centerHorizontal="true"
+    app:cardCornerRadius="6dp"
+    app:cardBackgroundColor="@color/colorLightGrey3"
+    android:layout_marginTop="80dp"
+    android:padding="16dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="35dp"
+       >
+        <ImageView
+            android:id="@+id/ic_left"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_list_black_24dp"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_label_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Summary"
+            android:textColor="@color/colorTextDark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/ic_left"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_label_summary"
+            android:text="Positive"
+            android:textColor="@color/colorSecondaryAccent"
+            android:layout_toEndOf="@+id/ic_left"
+            android:layout_marginStart="60dp"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+</RelativeLayout>
